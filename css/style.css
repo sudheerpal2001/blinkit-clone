@@ -1,0 +1,798 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+#nav-outer{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 100px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.address{
+    height: 100px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search-outer{
+    height: 100px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-inner{
+    height: 50px;
+    width: 80%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 15px;
+    background-color: rgb(242, 242, 242);
+}
+.search-icon{
+    font-size: 25px;
+    padding-left: 20px;
+      
+}
+.search-bar{
+    width: 100%;
+    margin-left: 10px;
+    padding-left: 10px;
+
+}
+input{
+    height: 40px;
+    width: 90%;
+    border: none;
+    background-color: rgb(242, 242, 242);
+    font-size: 20px;
+    outline: none;
+}
+.profile{
+    height: 100px;
+    width: 8%; 
+    display: flex;
+    align-items: center;
+    
+}
+.profile a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+.cart{
+    height: 100px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-inner{
+    height: 50px;
+    width: 90%;
+    background-color: rgb(219, 218, 218);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-icon{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.cart-text{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.home-container{
+    width: 100%;
+    height: 280px;
+}
+.home-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.home-container-two{
+    width: 95%;
+    display: flex;
+    gap: 15px;
+    margin-left: 15px;
+}
+.home-container-product{
+    height: 200px;
+    width: 28%;
+}
+.home-container-product img{
+    height: 100%;
+    width: 100%;
+    
+}
+.product-container{
+    height: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+.products{
+    height: 200px;
+}
+.products img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Dairy Section */
+
+.dairy-heading{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading-text h2{
+    margin-left: 15px;
+}
+.see-more{
+    margin-right: 15px;
+}
+.see-more a{
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dairy-container{
+    /* width: 90%; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+}
+.dairy-products{
+    background-color: rgb(253, 252, 252);
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.dairy-products img{
+    height: 180px;
+    width: 100%;
+}
+.dairy-products p{
+    margin-left: 15px;
+    margin-top: -20px;
+    font-size: 15px;
+}
+.quantity{
+    padding: 15px;
+    color: rgb(189, 189, 189);
+}
+.price{
+    margin-top: -10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    height: 30px;
+    width: 65px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+
+/* Tabacco */
+
+.tabacco-heading{
+    margin: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading-text h2{
+    margin-left: 15px;
+}
+.see-more{
+    margin-right: 15px;
+}
+.see-more a{
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tabacco-container{
+    /* width: 90%; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+}
+.tabacco-products{
+    background-color: rgb(253, 252, 252);
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.tabacco-products img{
+    height: 180px;
+    width: 100%;
+}
+.tabacco-products p{
+    margin-left: 15px;
+    margin-top: -20px;
+    font-size: 15px;
+}
+.quantity{
+    padding: 15px;
+    color: rgb(189, 189, 189);
+}
+.price{
+    margin-top: -10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    height: 30px;
+    width: 65px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+
+/* Snaks & Munchies */
+
+.snacks-heading{
+    margin: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading-text h2{
+    margin-left: 15px;
+}
+.see-more{
+    margin-right: 15px;
+}
+.see-more a{
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+.snacks-container{
+    /* width: 90%; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+}
+.snacks-products{
+    background-color: rgb(253, 252, 252);
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.snacks-products img{
+    height: 180px;
+    width: 100%;
+}
+.snacks-products p{
+    margin-left: 15px;
+    margin-top: -20px;
+    font-size: 15px;
+}
+.quantity{
+    padding: 15px;
+    color: rgb(189, 189, 189);
+}
+.price{
+    margin-top: -10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    height: 30px;
+    width: 65px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+
+/* Hookah */
+
+.hookah-heading{
+    margin: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading-text h2{
+    margin-left: 15px;
+}
+.see-more{
+    margin-right: 15px;
+}
+.see-more a{
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+.hookah-container{
+    /* width: 90%; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+}
+.hookah-products{
+    background-color: rgb(253, 252, 252);
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.hookah-products img{
+    height: 180px;
+    width: 100%;
+}
+.hookah-products p{
+    margin-left: 15px;
+    margin-top: -20px;
+    font-size: 15px;
+}
+.quantity{
+    padding: 15px;
+    color: rgb(189, 189, 189);
+}
+.price{
+    margin-top: -10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    height: 30px;
+    width: 65px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+
+/* Footer Section */
+.footer-heading{
+    margin: 40px;
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 400px;
+}
+.heading-text h2{
+    margin-left: 15px;
+}
+.see-more{
+    margin-right: 15px;
+}
+.see-more h2{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.footer-container{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-left{
+    width: 40%;
+    margin-top:-100px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-left-one, .footer-left-two, .footer-left-three  p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.footer-right{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-right-one, .footer-right-two, .footer-right-three  p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer Bottom */
+.footer-bottom{
+    height: 60px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    gap: 60px;
+
+}
+
+.footer-container-left{
+    width: 30%;
+}
+.footer-container-left p{
+    font-size: 20px;
+}
+.footer-container-middle{
+    width: 40%;
+    display: flex;
+    gap: 10px;
+}
+.box{
+    width: 40%;
+}
+.box p{
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color:gray;
+    display: flex;
+    align-items: center;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+}
+.footer-container-right{
+    width: 30%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-container-right a{
+    color: black;
+}
+.lower-footer{
+    margin: 20px;
+}
+.lower-footer p{
+    font-size: 17px;
+}
+
+/* Home Page Css End Here */
+
+/* Vegetables Page CSS */
+
+.main-outer{
+    width: 95%;
+    /* height: 400px; */
+    margin: 0px auto;
+    border: 1px solid rgb(224, 223, 223);
+}
+.heading-div{
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid rgb(224, 223, 223);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.main-container{
+    width: 100%;
+    height: 450px;
+    display: flex;
+}
+.aside-container{
+    height: 450px;
+    width: 8%;
+    border: 1px solid rgb(224, 223, 223);
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 10px;
+}
+.aside{
+    height: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;    
+}
+.aside img{
+    height: 100%;
+    width: 100%;
+}
+.aside p{
+    font-size: 15px;
+    margin-top: -40px;
+    text-align: center;
+}
+.right-container{
+    height: 450px;
+    width: 92%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+.vegetable-products{
+    background-color: rgb(253, 252, 252);
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.vegetable-products img{
+    height: 180px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+.vegetable-products p{
+    margin-left: 15px;
+    margin-top: 2px;
+    font-size: 15px;
+}
+.quantity{
+    padding: 15px;
+    color: rgb(189, 189, 189);
+}
+.price{
+    margin-top: -10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    height: 30px;
+    width: 65px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+
+/* Fruits Page CSS */
+
+.fruit-products{
+    background-color: rgb(253, 252, 252);
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.fruit-products img{
+    height: 180px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+.fruit-products p{
+    margin-left: 15px;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+/* PAn Corner page CSS */
+.tabacco-right-container{
+    height: 450px;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+.tabacco-outer{
+    height: 450px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.tabacco-banner {
+    height: 350px;
+    width: 100%;
+}
+.tabacco-banner img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Rollling Paper Page */
+
+.main-container-rolling{
+    height: 600px;
+    width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.main-container-rolling-left{
+    border: 1px solid gray;
+    width: 50%;
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 10px;
+}
+.main-container-rolling-left::-webkit-scrollbar{
+    display: none;
+}
+.left-container-one{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.left-container-two{
+    /* height: 100px; */
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    gap: 15px;
+}
+.left-container-two img{
+    flex-shrink: 0;
+}
+.left-container-two::-webkit-scrollbar {
+    display: none;
+}
+.left-container-three{
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 20px;
+    line-height: 1.5;
+    margin-bottom: -40px;
+}
+.main-container-rolling-right{
+    border: 1px solid gray;
+    width: 50%;
+    height: 600px;
+}
+.product-price{
+    width: 90%;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-btn{
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+}
+.delivery{
+    margin: 35px;
+    margin-top: 40px;
+}
+.delivery-des{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+#img{
+    height: 80px;
+    width: 80px;
+}
+#img img{
+    height: 100%;
+    width: 100%;
+}
+
+hr{
+    margin-top: 50px;
+    margin-left: 5%;
+    height: 3px;
+    width: 90%;
+    background-color: rgb(198, 198, 198);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query For Responseness */
+
+@media (max-width:768px) {
+    .container-outer{
+        overflow-x: hidden;
+    }
+    #nav-outer .logo{
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    .address h2,p, .cart, .profile{
+        visibility: hidden;
+    }
+    .search-outer{
+        justify-content: start;
+        margin-left: -80px;
+    }
+    .home-container{
+        width: 70%;
+        height: 150px;
+    }
+    .home-container-two img{
+        height: 80px;
+        width: 100%;
+        gap: 5px;
+    }
+    .product-container .products{
+        grid-template-columns: repeat(5, 1fr);
+        
+    }
+    .dairy-container{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
